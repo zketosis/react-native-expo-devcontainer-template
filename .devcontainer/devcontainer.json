@@ -1,12 +1,29 @@
 {
-    "name": "Expo Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
-    "forwardPorts": [
-      8081
-    ],
-    "runArgs": [
-      "-p=8081:8081",
-      "--env-file",
-      ".devcontainer/.env"
-    ]
+  "name": "Expo Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "forwardPorts": [
+    8081
+  ],
+  "runArgs": [
+    "-p=8081:8081",
+    "--env-file",
+    ".devcontainer/.env"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "biomejs.biome"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "[javascript][javascriptreact][typescript][typescriptreact][json]": {
+          "editor.defaultFormatter": "biomejs.biome"
+        },
+        "editor.codeActionsOnSave": {
+          "quickfix.biome": true,
+          "source.organizeImports.biome": true
+        }
+      }
+    }
+  }
 }
