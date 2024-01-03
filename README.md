@@ -1,7 +1,6 @@
-# react-native-expo-devcontainer-template-for-post
+# react-native-expo-devcontainer-template
 
-This repository is a pre-configured example of a React Native Expo development environment using Dev Containers, constructed according to the procedures outlined in my post (https://zenn.dev/articles/a31b425bfb25db). It is provided for reference purposes related to my post and will not be updated. For the most up-to-date version of this template, please visit https://github.com/matsu3m/react-native-expo-devcontainer-template.
-
+This template provides an example for setting up a development environment for React Native Expo applications using Dev Containers. 
 To set up the container, please follow the instructions below:
 
 ## Prerequisites
@@ -15,17 +14,22 @@ Ensure that you have the following installed on your machine:
 
 ## Setup Instructions
 
-1. Clone the Project and Open in VSCode:
+1. Create a New Repository:
 
-    - Clone the project repository to your local machine.
-    - Open the project in VS Code.
+    - Navigate to the [original repository page](https://github.com/matsu3m/react-native-expo-devcontainer-template) on GitHub.
+    - Click on `Use this template` to create a new repository based on this template.
 
-2. Reopen in Container:
+2. Clone the Project:
+
+    - Clone the newly created repository to your local machine.
+    - Open the cloned project in VS Code.
+
+3. Reopen in Container:
 
     - Open the Command Palette in VS Code.
     - Select `Dev Containers: Reopen in Container`. VS Code will then start building the container and open the project inside it.
 
-3. Start the Expo Server:
+4. Start the Expo Server:
 
     - Once the container is running, open the terminal in VS Code.
     - Run the command `npm run start` to start the Expo server.
