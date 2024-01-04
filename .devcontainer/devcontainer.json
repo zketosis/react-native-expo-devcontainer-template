@@ -11,6 +11,7 @@
         "biomejs.biome",
         "eamodio.gitlens",
         "editorconfig.editorconfig",
+        "GitHub.vscode-github-actions",
         "streetsidesoftware.code-spell-checker",
         "VisualStudioExptTeam.vscodeintellicode"
       ],
@@ -37,7 +38,8 @@
         },
         "[jsonc]": {
           "editor.defaultFormatter": "biomejs.biome"
-        }
+        },
+        "workbench.tree.indent": 25
       }
     }
   }
