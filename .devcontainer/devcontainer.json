@@ -5,42 +5,4 @@
   "mounts": ["source=node_modules_${devcontainerId},target=${containerWorkspaceFolder}/node_modules,type=volume"],
   "forwardPorts": [8081],
   "runArgs": ["-p=8081:8081", "--env-file", ".devcontainer/.env"],
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "biomejs.biome",
-        "eamodio.gitlens",
-        "editorconfig.editorconfig",
-        "GitHub.vscode-github-actions",
-        "streetsidesoftware.code-spell-checker",
-        "VisualStudioExptTeam.vscodeintellicode"
-      ],
-      "settings": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-          "quickfix.biome": true,
-          "source.organizeImports.biome": true
-        },
-        "[javascript]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[javascriptreact]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[typescript]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[typescriptreact]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[json]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "[jsonc]": {
-          "editor.defaultFormatter": "biomejs.biome"
-        },
-        "workbench.tree.indent": 25
-      }
-    }
-  }
 }
